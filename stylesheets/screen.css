@@ -45,6 +45,20 @@ body div:after {
   background-color: #d50000;
 }
 
+.text {
+	color: white;
+	font-size: large;
+	text-transform: uppercase;
+	transform: rotate(-45deg);
+	position: absolute;
+	z-index:99;
+	font-family: sans-serif;font-weight: bold;
+	font-size: x-large;
+	margin: auto;
+	padding-right: 2em;
+	padding-bottom: 1em;
+}
+
 /* Animation Heart */
 @keyframes heart {
   0%,
