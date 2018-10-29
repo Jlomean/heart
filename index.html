@@ -10,10 +10,13 @@
 <body>
     <section>
         <div>
-			<p class="text">
-				HOLLIS
-			</p>
-		</div>
+		<p id="name"></p>
+
+		<script>
+			document.getElementById("name").innerHTML = 
+			window.location.search.substr(1);
+		</script>
+	</div>
     </section>
 </body>
 
