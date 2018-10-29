@@ -43,6 +43,7 @@ body div:after {
   content: '';
   border-radius: 50%;
   background-color: #d50000;
+  z-index: 1;
 }
 
 #name {
