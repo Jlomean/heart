@@ -13,8 +13,17 @@
 		<p id="name"></p>
 
 		<script>
-			document.getElementById("name").innerHTML = 
-			window.location.search.substr(1);
+			var endChar = '&';
+			var nameString = window.location.search;
+			var stringEnd = nameString.indexOf(endChar);
+			if (stringEnd > -1) {
+				document.getElementById("name").innerHTML = 
+				nameString.substring(1, stringEnd);
+			}
+			else {
+				document.getElementById("name").innerHTML = 
+					nameString.substring(1);
+			}
 		</script>
 	</div>
     </section>
